@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href = "style.css" type = "text/css" rel = "stylesheet" />
+    <script src ="js.js" defer></script>
+
+
+</head>
+<body>
+    <h1>Dr Aviation</h1>
+    
+    <div class="container">
+        <div class = "flex">
+            <select>  
+                <option>--Select Departure City--</option>  
+                <option value="betina" >Betina</option>  
+                <option value="naomi" >Naomi</option>  
+                <option value="nordcity" >NordCity</option>  
+                <option value="bahara" >Bahara</option>  
+                <option value="nabihalia" >Nabihalia</option>  
+                <option value="barsa" >Barsa</option>  
+                <option value="vivid" >Vivid</option>  
+                <option value="mervat" >Mervat</option>  
+                <option value="solenzara" >Solenzara</option>  
+                <option value="dubalapin" >DubaLapin</option>   
+            </select>  
+         </form>  
+
+         <label id = "destination">Distanation City:</label>
+
+        </div>
+        <button onclick = "randomCity()">Go!</button>
+        <div id = "map">
+            <img src="./img/map.jpg" alt="map" id="img"/>
+            <img id = "plane" src="./img/airplane-png.png" alt="plane_png"/>
+            <img class = "randomPlane" src="./img/airplane-png.png" alt="planeRandom_png"/>
+
+        </div>
+
+        <div id = "dashBoard"> 
+            <div>
+                <h5 id = "alt">altitude</h5>
+                <h5 id = "displaySpeed">Speed: 0km/h</h5>
+                <h5 id = "deg">Deg": 0</h5>
+            </div>
+            <div>
+                <h5 id = "horiz">Horizontal Mapp:</h5>
+                <h5 id = "vert">Vertical Mapp:</h5>
+                <h5 >still</h5>
+            </div>
+
+        </div>
+
+
+        <ul>
+            <!--<button onclick = "flightTurnLeft()">Turn left</button> -->
+            
+            <div class = "speedDiv">
+                <h6>Speed</h6>
+                <ul>
+                    <button onclick = "speedup()">+</button>
+                    <button onclick = "speeddown()">-</button>
+                </ul>
+            </div>
+            <button id = "btn" onclick = "flightTurnRight()">Start</button>
+        </ul>
+
+
+
+
+
+        </div>
+
+
+
+
+    
+</body>
+
+</html>
